@@ -4,10 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
+import CreateLicense from './components/CreateLicense';
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <Router>
+    
+      <Routes>
+      <Route exact path="/" element={<App/>} /> 
+      <Route path="/CreateLicense" element={<CreateLicense />} /> 
+    
+      </Routes>
+    </Router>
+    </React.StrictMode>
+ ,
   document.getElementById('root')
 );
 
