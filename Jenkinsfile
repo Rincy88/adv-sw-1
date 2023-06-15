@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         nodejs "node"
+        mavenTool "maven"
     }
   
 
